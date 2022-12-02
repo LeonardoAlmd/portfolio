@@ -4,6 +4,8 @@ body {
     color: #bbbbbb;
     padding-top: 80px;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 
 a,
@@ -32,7 +34,6 @@ ul {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 16px;
-    width: 100%;
 }
 
 .box{
@@ -42,9 +43,36 @@ ul {
     background-image: linear-gradient(310deg, #282433, #1A1821, #110F17);
 	box-shadow: 0 0 24px rgba(0, 0, 0, 1);
 	margin: 32px;
-	transition: .30s ease-in-out;
+	transition: .3s ease-in-out;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
     overflow: hidden;
+	position: relative;
+}
+
+.box .content{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -110%;
+	transition: .5s ease-in-out;
+	padding: 150px 8.5px;
+}
+
+.box .content::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+}
+
+.box:hover .content{
+	transform: translateX(100%);
 }
 
 /*NavBar*/
@@ -317,6 +345,7 @@ ul {
 .cursos-box{
     width: 350px;
     height: 290px;
+	position: relative;
 }
 
 .cursos-box img{
@@ -326,3 +355,151 @@ ul {
     border-radius: 15px 15px 0 0;
 }
 
+#cursos-title{
+	font-size: 24px;
+	font-weight: 300;
+	transition: .5s ease-in-out;
+	text-align: center;
+}
+
+#cursos-caption{
+	font-size: 18px;
+	transition: .5s ease-in-out;
+	margin-bottom: 10px;
+}
+
+.cursos .box .content{
+	padding: 195px 11.5px;
+}
+
+.box .content p{
+	font-size: 14px;
+	margin: 32px 22px;
+	text-align: center;
+}
+
+.cursos .box:hover{
+	width: 350px;
+	height: 350px;
+}
+
+.cursos .box:hover #cursos-title, .cursos .box:hover #cursos-caption{
+	opacity: 0;
+}
+
+/*Conhecimentos*/
+
+#conhecimentos-title{
+	margin: 40px 0 0;
+}
+
+#conhecimentos-title, #conhecimentos-caption{
+	font-weight: 300;
+	transition: .4s ease-in-out;
+}
+
+.box:hover #conhecimentos-title, .box:hover #conhecimentos-caption{
+	opacity: 0;
+}
+
+.box i.fa-brands{
+	font-size: 10rem;
+	transition: .5s ease-in-out;
+}
+
+.box:hover i.fa-brands{
+	font-size: 7rem;
+	transform: translate(0, -130px);
+	margin-top: 40px;
+}
+
+#conhecimentos-caption{
+	font-size: 18px;
+}
+
+/*Projetos*/
+.projetos h1{
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.projetos .box:hover{
+	width: 350px;
+	height: 350px;
+}
+
+/*Contatos*/
+
+.contatos{
+	margin-top: 16px;
+	width: 100%;
+	background-color: #0B0A0F;
+	bottom: 0;
+	flex-shrink: 0;
+}
+
+.contatos h1{
+    font-size: 32px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+	padding-top: 32px;
+}
+
+.contatos .box-footer{
+	width: 400px;
+	height: 400px;
+	margin: 32px 8px 0;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	box-shadow: none;
+	background-image: linear-gradient(310deg, #282433, #1A1821, #110F17);
+}
+
+.box-items{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.contatos .box-largo{
+	width: 800px;
+}
+
+a .box-items{ 
+	display: flex;
+	flex-wrap: wrap;
+	color: #bbbbbb;
+}
+
+.box-footer a{
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+.box-items i{
+	font-size: 2rem;
+	margin: 5px 10px 0;
+}
+
+.box-items h3{
+	font-size: 14px;
+}
+
+.copyright{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	color: #bbbbbb;
+	font-size: 14px;
+}
+.copyright i{
+	font-size: 14px;
+	padding: 20px 5px 0;
+}

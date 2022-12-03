@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Este projeto tem como intenção fazer um portfólio para servir como curriculo, no momento apenas focado no front-end atualmente, mas com intuito de melhorar e aprimorar mais e mais.
+Este projeto tem como intenção fazer um portfólio para servir como curriculo, no momento apenas focado no front-end, mas com intuito de melhorar e aprimorar mais e mais.
 
 # Layout Web
 

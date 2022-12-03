@@ -31,7 +31,7 @@ Este projeto tem como intenção fazer um portfólio para servir como curriculo,
 
 ![projetos](https://github.com/LeonardoAlmd/assets-portfolio/blob/main/assets-portfolio/contatos-1.png)
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 + HTML5
 + CSS3
